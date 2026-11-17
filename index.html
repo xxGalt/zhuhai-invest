@@ -27,6 +27,77 @@
 @media(max-width:1000px){.top-center{display:none}.factline{grid-template-columns:repeat(2,1fr)}.fact:nth-child(2){border:0}.fact:nth-child(-n+2){border-bottom:1px solid var(--line)}.fact:nth-child(3){padding-left:0}.industry-grid{grid-template-columns:1fr}.ind-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;border:0}.ind-tab{padding:14px 11px;border:1px solid var(--line);font-size:13px;min-height:48px}.ind-tab:hover{padding-left:11px}.ind-tab[aria-selected=true]{background:#1b2c41;border-color:#6d9fd6}.ind-tab .tab-arrow,.ind-tab .tab-count{display:none}.ind-panel{min-height:460px}.reserve{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){:root{--pad:22px}.top{height:70px}.brand-mark{font-size:10px;padding:7px 10px}.brand-sub,.year{display:none}.navbutton{padding:9px 13px;font-size:11px}.hero{min-height:710px;height:94svh}.hero::before{width:120vw;height:140vw;right:-57%;top:-17%;filter:blur(45px)}.hero::after{width:100vw;height:95vw;right:0;bottom:-2%;filter:blur(55px)}.hero-headline{font-size:clamp(53px,11vw,90px);letter-spacing:-.085em;line-height:1.14}.hero-ar{width:57px;height:57px;margin-left:10px;vertical-align:4%;font-size:30px}.hero-content{padding-bottom:70px}.hero-bottom{display:block}.hero-bottom .eyebrow{margin-top:12px}.chapter{padding:82px 0}.chapter-title{font-size:clamp(44px,9.7vw,72px)}.chapter-title.small{font-size:clamp(40px,9vw,60px)}.sectiontop{margin-bottom:35px}.sectiontop .tiny{display:none}.factline{margin-top:52px}.fact{padding:23px 12px;min-height:137px}.fact strong{font-size:clamp(39px,10.5vw,60px)}.fact em{margin-top:14px;font-size:12px}.undertext,.support-layout,.meeting-top{grid-template-columns:1fr;gap:30px;margin-top:49px}.undertext p{font-size:14px}.ind-list{grid-template-columns:repeat(2,minmax(0,1fr))}.ind-tab{font-size:12px}.ind-name{font-size:clamp(46px,11vw,77px)}.ind-desc{font-size:14px}.statrow{gap:24px}.statrow strong{font-size:26px}.mini-chart{grid-template-columns:1fr;gap:6px}.space-panel{grid-template-columns:1fr;gap:35px}.space-panel h3{font-size:51px}.space-large{font-size:93px}.select-strip{margin:25px 0 35px}.segment{padding:14px;font-size:12px}.reserve{margin-top:38px}.reserve b{font-size:20px}.support-main{font-size:90px}.support-points{margin-top:45px}.support-point{padding:22px 12px 22px 0}.support-point:nth-child(2),.support-point:last-child{padding-left:13px}.support-point b{font-size:22px}.support-point span{font-size:11px;line-height:1.5}.support-trio,.living-cols{grid-template-columns:1fr;gap:12px;margin-top:45px}.support-tile{min-height:auto;padding:22px 24px}.support-tile h4{margin:16px 0 6px}.living-col{padding:22px 0 15px}.living-col p{margin-top:13px}.policy{padding-top:65px}.brief-grid{grid-template-columns:1fr}.final{padding-top:90px;min-height:570px}.final-title{font-size:clamp(58px,12vw,100px);margin:75px 0 39px}.bottom-meta{align-items:start;gap:15px}.bottom-meta span:last-child{display:none}.menulinks{margin-top:35px}.menulinks a{font-size:35px;padding:22px 0}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}@media print{body{background:#fff;color:#111}.grain,.top,.menu-cover,.button-line,.navbutton{display:none!important}.hero{height:auto;min-height:260px}.hero::before,.hero::after{display:none}.hero-headline{font-size:58px}.chapter{padding:40px 0;break-inside:avoid}.chapter-title{font-size:42px}.factline,.industries,.space-section,.living,.meeting{background:white;color:black}.chapter-lead,.ind-desc,.support-desc,.living-col p,.policy details p{color:#333}.company-tags span{color:#333;border-color:#999}.ind-list{display:none}.ind-panel{min-height:auto}.field{background:#fff;color:#111}}
+
+/* 2026 editorial visual direction / intentionally restrained, no stock cards */
+.hero-rework{height:min(1020px,100svh);min-height:710px;align-items:stretch;background:#060709}
+.hero-rework::before,.hero-rework::after{display:none}
+.hero-ambient{position:absolute;z-index:-1;pointer-events:none;mix-blend-mode:screen;filter:blur(72px);border-radius:50%;opacity:.87}
+.hero-ambient-blue{width:85vw;height:78vw;max-height:1050px;max-width:1150px;right:-21vw;top:-34vw;background:radial-gradient(ellipse at 41% 42%,rgba(42,111,205,.18) 4%,rgba(65,142,233,.83) 28%,rgba(24,62,114,.3) 57%,transparent 73%)}
+.hero-ambient-teal{width:56vw;height:50vw;right:9%;bottom:-27%;background:radial-gradient(ellipse,rgba(44,136,155,.46),rgba(29,66,122,.22) 50%,transparent 73%)}
+.hero-ambient-rose{width:39vw;height:36vw;right:19%;top:4%;background:radial-gradient(ellipse,rgba(155,115,99,.32),rgba(122,79,89,.08) 48%,transparent 71%)}
+.hero-stage{width:100%;display:flex;flex-direction:column;justify-content:space-between;position:relative;padding-top:clamp(137px,17vh,197px);padding-bottom:clamp(42px,5vw,75px)}
+.hero-editorial{font-size:12px;letter-spacing:.14em;color:#d5dbe3;display:flex;gap:16px;align-items:center}
+.hero-rule{display:block;width:38px;height:1px;background:#d4dfec}.hero-date{margin-left:auto;color:#c1cada}
+.hero-spine{padding:clamp(25px,5vh,60px) 0 0}.hero-overline{font-size:12px;letter-spacing:.22em;color:#b1bbc8;margin-bottom:22px}
+.hero-display{font-size:clamp(84px,10.3vw,166px);line-height:1.04;letter-spacing:-.085em;font-weight:760;margin:0;max-width:1280px}
+.hero-display>span{display:block;white-space:nowrap}
+.hero-next{display:inline-flex;align-items:center;justify-content:center;width:clamp(72px,8.7vw,132px);height:clamp(72px,8.7vw,132px);font-size:clamp(43px,5.2vw,82px);line-height:1;border-radius:999px;background:#f8f9fb;color:#0a1c2c;margin-left:clamp(14px,3vw,45px);vertical-align:12%;text-decoration:none;font-weight:400;letter-spacing:0;transition:transform .3s,background .3s}
+.hero-next:hover{transform:translate(9px,-9px);background:#d6eaff}
+.hero-footer{border-top:1px solid rgba(255,255,255,.35);padding-top:24px;display:flex;align-items:flex-end;justify-content:space-between;gap:35px}
+.hero-footer-h{font-weight:650;letter-spacing:.02em;font-size:19px}
+.hero-footer p{font-size:14px;color:#b6c2d0;line-height:1.9;margin:15px 0 0}
+.hero-explore{display:flex;gap:29px;align-items:center;text-decoration:none;font-size:11px;letter-spacing:.14em;white-space:nowrap;color:#d6e0ed}
+.hero-explore span:last-child{font-size:27px;line-height:1}
+.policy-intro{color:#acb9c8;max-width:770px;font-size:15px;line-height:2;margin:0 0 36px}
+.policy summary small{display:block;color:#8a9dad;font-size:12px;letter-spacing:.03em;font-weight:450;margin-top:6px}
+.policy-copy{padding:0 4px 29px;max-width:880px}
+.policy-copy p{color:#b9c5d3;font-size:14px;line-height:2;margin:0 0 12px}
+.policy-copy strong{color:#eaf1f8;font-weight:600}
+.final-rework{background:#07080b;padding-top:clamp(105px,12vw,170px);padding-bottom:42px;min-height:790px}
+.final-rework::before{width:86vw;height:74vw;left:26%;top:-34%;bottom:auto;filter:blur(100px);background:radial-gradient(ellipse,rgba(36,105,201,.31),rgba(24,59,112,.16) 43%,transparent 69%)}
+.final-index{display:flex;justify-content:space-between;align-items:center;padding-bottom:23px;border-bottom:1px solid rgba(255,255,255,.23);font-size:11px;letter-spacing:.17em;color:#bdc9d7;gap:18px}
+.final-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(340px,420px);gap:clamp(25px,5vw,95px);align-items:start;margin-top:clamp(54px,7.5vw,106px)}
+.final-title-v2{font-size:clamp(67px,8.3vw,143px);line-height:1.16;letter-spacing:-.088em;font-weight:760;margin:0 0 56px}
+.final-title-v2 span{display:block;white-space:nowrap}
+.final-title-v2 i{font-size:.66em;font-style:normal;font-weight:350;vertical-align:9%;margin-left:.14em;letter-spacing:0}
+.final-hello{font-size:20px;color:#e0e6ed;line-height:1.5;margin:0 0 12px}
+.final-explain{font-size:15px;color:#aebdcb;line-height:2;max-width:620px;margin:0}
+.final-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:52px}
+.final-pill{min-width:182px;border-radius:999px;border:1px solid rgba(255,255,255,.45);text-decoration:none;padding:17px 20px 17px 24px;display:inline-flex;align-items:center;justify-content:space-between;gap:19px;font-size:14px;font-weight:670;transition:transform .22s}
+.final-pill:hover{transform:translateY(-3px)}
+.final-pill b{font-size:22px;line-height:1;font-weight:500}
+.final-pill-solid{background:#f5f7fb;color:#09111a;border-color:#f5f7fb}
+.final-pill-outline{color:white;background:transparent}
+.final-contact-panel{border:1px solid rgba(255,255,255,.2);border-radius:26px;padding:29px;background:linear-gradient(160deg,rgba(54,84,121,.13),rgba(255,255,255,.018) 48%);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);position:relative;overflow:hidden}
+.final-contact-panel::before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(130deg,rgba(255,255,255,.12),transparent 23%);opacity:.45}
+.person-overline{font-size:11px;color:#9ab4d2;letter-spacing:.18em}
+.person-heading{display:flex;flex-direction:column;gap:5px;margin-top:25px}
+.person-heading strong{font-size:clamp(32px,3vw,49px);letter-spacing:-.04em}
+.person-heading span{font-size:13px;color:#b7c3d1}
+.contact-facts{border-top:1px solid rgba(255,255,255,.16);margin-top:32px}
+.contact-row{display:grid;grid-template-columns:73px minmax(0,1fr);gap:14px;border-bottom:1px solid rgba(255,255,255,.12);padding:16px 0;line-height:1.65}
+.contact-row>span{font-size:11px;color:#8c9eb1;padding-top:3px}
+.contact-row>div,.contact-row a{color:#e1e9f1;text-decoration:none;font-size:13px;overflow-wrap:anywhere}
+.contact-row a:hover{text-decoration:underline;text-underline-offset:4px}
+.wechat-band{display:grid;grid-template-columns:122px minmax(0,1fr);gap:20px;align-items:center;margin-top:27px}
+.wechat-qr-link{display:block;background:#fff;border-radius:13px;overflow:hidden;padding:5px;transition:transform .2s}
+.wechat-qr-link:hover{transform:scale(1.035)}
+.wechat-qr-link img{display:block;width:100%;height:auto;aspect-ratio:1}
+.wechat-label{font-size:10px;letter-spacing:.17em;color:#9fb3d2;margin-bottom:9px}
+.wechat-band h3{font-size:19px;font-weight:660;line-height:1.3;margin:0 0 8px}
+.wechat-band p{font-size:12px;color:#a9b8c8;line-height:1.75;margin:0 0 8px}
+.wechat-band div>a{font-size:11px;color:#d1e5fd;text-decoration:none}
+.final-endnote{border-top:1px solid rgba(255,255,255,.25);margin-top:94px;padding-top:22px;display:flex;gap:18px;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.05em;color:#9faebe}
+.final-utility{display:flex;gap:24px;flex-wrap:wrap}
+.final-text-button{appearance:none;background:transparent;border:0;padding:10px 0;color:#e8eff7;font-size:12px;text-decoration:underline;text-underline-offset:5px}
+.final-legal{font-size:10px;color:#758292;line-height:1.8;margin-top:23px}
+@media(max-width:1050px){.final-layout{grid-template-columns:minmax(0,1fr) minmax(320px,.8fr);gap:28px}.final-title-v2{font-size:clamp(58px,7.8vw,100px)}.hero-display{font-size:clamp(76px,10.1vw,130px)}}
+@media(max-width:770px){.hero-rework{min-height:690px;height:96svh}.hero-stage{padding-top:120px;padding-bottom:40px}.hero-editorial{font-size:10px;letter-spacing:.11em}.hero-date{display:none}.hero-spine{padding-top:36px}.hero-overline{font-size:10px;letter-spacing:.12em}.hero-display{font-size:clamp(58px,13vw,89px);letter-spacing:-.082em}.hero-next{width:54px;height:54px;font-size:34px;margin-left:11px;vertical-align:9%}.hero-ambient-blue{width:138vw;height:140vw;right:-66vw;top:-8vw;filter:blur(48px)}.hero-ambient-teal{width:100vw;height:95vw;right:-2vw;bottom:-8vw;filter:blur(48px)}.hero-footer{align-items:flex-start;gap:10px}.hero-footer-h{font-size:15px}.hero-footer p{font-size:12px;line-height:1.8}.hero-explore{display:none}
+.final-rework{padding-top:83px;min-height:auto}.final-index span:last-child{display:none}.final-layout{grid-template-columns:1fr;gap:52px;margin-top:60px}.final-title-v2{font-size:clamp(54px,12.5vw,85px);margin-bottom:37px}.final-title-v2 i{font-size:.53em}.final-hello{font-size:18px}.final-explain{font-size:14px}.final-actions{margin-top:31px}.final-pill{min-width:0;flex:1 1 140px}.final-contact-panel{padding:23px;border-radius:22px}.person-heading strong{font-size:38px}.contact-row>div,.contact-row a{font-size:13px}.wechat-band{grid-template-columns:113px 1fr;gap:14px}.wechat-band h3{font-size:17px}.final-endnote{margin-top:62px;flex-wrap:wrap}.final-utility{order:3;width:100%;justify-content:space-between}.final-rework .to-top{width:42px;height:42px;flex:0 0 42px}}
+@media(max-width:380px){.hero-display{font-size:13vw}.hero-next{width:48px;height:48px;font-size:30px}.final-title-v2{font-size:11.7vw}.wechat-band{grid-template-columns:97px 1fr}.contact-row{grid-template-columns:68px 1fr;gap:9px}}
+@media(prefers-reduced-motion:reduce){.hero-next,.wechat-qr-link{transition:none}}
+@media print{.hero-ambient{display:none}.hero-rework{height:auto;min-height:420px}.hero-display{font-size:70px}.final-rework{min-height:auto}.final-contact-panel,.final-rework{background:#fff;color:#111}.contact-row a,.contact-row>div{color:#111}.person-overline,.contact-row>span,.person-heading span{color:#444}}
+
 </style>
 </head>
 <body>
@@ -44,18 +115,24 @@
 <li><a href="#space"><span>03</span> 产业空间 <span>Space</span></a></li>
 <li><a href="#support"><span>04</span> 资本与政策 <span>Support</span></a></li>
 <li><a href="#living"><span>05</span> 人才与生活 <span>Life</span></a></li>
-<li><a href="#contact"><span>06</span> 项目对接 <span>Contact</span></a></li>
+<li><a href="#contact"><span>06</span> 项目对接 <span>Project</span></a></li>
+<li><a href="#reach"><span>07</span> 招商联络 <span>Contact</span></a></li>
 </ul><div class="tiny">珠海高新区营商环境推介资料 · 2026.11</div>
 </nav>
 <main>
-<section id="home" class="hero">
-<div class="aura-amber" aria-hidden="true"></div><div class="aura-edge" aria-hidden="true"></div>
-<div class="wrap hero-content">
-<div class="eyebrow" style="margin-bottom:35px"><i></i> 百年唐家 · 创新湾区 / ZHUHAI</div>
-<h1 class="hero-headline"><span>把下一程，</span><span>落在这里。<a class="hero-ar" href="#overview" aria-label="继续阅读">↗</a></span></h1>
-<div class="hero-bottom">
-<p>从研发，到中试，再到规模化制造。<br>了解一座面向产业生长的滨海高新区。</p>
-<div class="eyebrow"><i></i> 2026 · 企业家投资指南</div>
+<section id="home" class="hero hero-rework">
+<div class="hero-ambient hero-ambient-blue" aria-hidden="true"></div>
+<div class="hero-ambient hero-ambient-teal" aria-hidden="true"></div>
+<div class="hero-ambient hero-ambient-rose" aria-hidden="true"></div>
+<div class="wrap hero-stage">
+<div class="hero-editorial"><span class="hero-rule"></span> ZHUHAI / GREATER BAY AREA <span class="hero-date">2026 EDITION</span></div>
+<div class="hero-spine">
+<div class="hero-overline">ZHUHAI HIGH-TECH ZONE · INVESTMENT GUIDE</div>
+<h1 class="hero-display"><span>让创新，</span><span>走向产业。<a href="#overview" class="hero-next" aria-label="向下阅读区域介绍">↗</a></span></h1>
+</div>
+<div class="hero-footer">
+<div><div class="hero-footer-h">珠海高新区 · 企业家投资指南</div><p>从技术研发到中试验证，再到规模制造与市场连接。<br>在湾区西岸，找到企业成长所需的下一步。</p></div>
+<a href="#industry" class="hero-explore"><span>EXPLORE INDUSTRIES</span><span>↘</span></a>
 </div>
 </div>
 </section>
@@ -138,12 +215,13 @@
 <div class="support-tile"><span class="tile-index">03 / SERVICE</span><h4>人才与产业服务</h4><p>政企联动招聘、产业人才对接、人才住房及研发经营所需服务，帮助企业完善从团队组建到持续经营的基础条件。</p></div>
 </div>
 <div class="policy">
-<div class="eyebrow" style="margin-bottom:25px"><i></i> 重点政策方向 / POLICY LIBRARY</div>
-<details><summary>半导体与集成电路产业发展 <span class="plus">+</span></summary><p>《珠海高新区促进半导体与集成电路产业高质量发展措施十条》。具体奖励条件、支持方向和有效期，应以正式政策文件及申报指南为准。</p></details>
-<details><summary>生物医药与大健康产业发展 <span class="plus">+</span></summary><p>《珠海高新区促进生物医药大健康产业高质量发展措施十条》。可根据企业的研发注册、产业化阶段和合规资质核对适用条款。</p></details>
-<details><summary>软件信息与人工智能产业发展 <span class="plus">+</span></summary><p>《珠海高新区促进软件信息和人工智能产业高质量发展措施十条》。对研发项目、平台建设、场景应用等需求，建议逐项对照正式条款。</p></details>
-<details><summary>工业强基提速与低空经济 <span class="plus">+</span></summary><p>《珠海高新区推动工业强基提速若干措施》及《高新区支持低空经济高质量发展若干措施》。支持方式与适用条件须以现行文件为准。</p></details>
-<details><summary>项目载体与人才住房 <span class="plus">+</span></summary><p>园区设置“5.0产业新空间”、人才公寓及相关住房安排。厂房价格、租赁条件、住房资格等均依实际资源和政策审核结果确定。</p></details>
+<div class="eyebrow" style="margin-bottom:21px"><i></i> 产业扶持 / POLICY OVERVIEW</div>
+<p class="policy-intro">从企业研发、产品验证到工业化生产，扶持政策需要和项目的实际阶段相匹配。以下为重点政策方向的简明摘要，便于企业初步判断合作切入点。</p>
+<details><summary><span>半导体与集成电路产业发展 <small>设计 · 材料 · 制造 · 封测</small></span><span class="plus">+</span></summary><div class="policy-copy"><p>围绕集成电路设计、化合物半导体、先进封装、材料及装备等关键环节，支持企业提升技术研发、工艺验证与产业化能力，鼓励产业链上下游协作。</p><p><strong>对接重点：</strong>核心技术与知识产权、研发及设备投入、工艺验证需求、量产计划、产业配套。</p></div></details>
+<details><summary><span>生物医药与医疗器械产业发展 <small>研发 · 注册 · 转化 · 量产</small></span><span class="plus">+</span></summary><div class="policy-copy"><p>聚焦高端医疗器械、生物医药与大健康领域，重视研发成果转化、产品注册、技术平台、临床协同和生产能力建设，推动项目由研发走向产业化。</p><p><strong>对接重点：</strong>研发及注册阶段、核心产品及资质、洁净空间、临床与检测需求、产线建设计划。</p></div></details>
+<details><summary><span>软件信息与人工智能产业发展 <small>研发 · 平台 · 场景</small></span><span class="plus">+</span></summary><div class="policy-copy"><p>面向软件研发、行业智能体、人工智能应用与数字化服务，鼓励技术平台建设、产品能力提升和应用场景验证，促进软件能力与实体产业融合。</p><p><strong>对接重点：</strong>核心研发团队、产品商业化阶段、算力及数据需求、行业客户、场景试点。</p></div></details>
+<details><summary><span>工业强基与低空经济 <small>技改 · 测试 · 工业化</small></span><span class="plus">+</span></summary><div class="policy-copy"><p>围绕制造业技术改造、产业链补强、低空飞行器及系统研发、测试验证和场景应用，推动技术研发与工程化、生产制造形成衔接。</p><p><strong>对接重点：</strong>设备投入、扩产计划、测试条件、飞行与安全合规要求、产业配套及应用场景。</p></div></details>
+<details><summary><span>产业空间与人才服务 <small>载体 · 招才 · 安居</small></span><span class="plus">+</span></summary><div class="policy-copy"><p>围绕研发办公、中试及标准厂房、产业用地、人才住房与企业服务等基础条件，为企业在不同发展阶段提供资源匹配与专业协调。</p><p><strong>对接重点：</strong>用房面积与工艺参数、入驻时间、核心人才需求、住房资格与资源供应。</p></div></details>
 </div>
 <div class="section-end"><span class="note">提示：以上是政策方向介绍，而非补贴承诺。未列具体金额，避免以政策上限代替可获得额度。</span><span class="smallcaps">POLICIES FOLLOW PROJECTS</span></div>
 </div>
@@ -179,13 +257,40 @@
 <div class="section-end"><span class="note">建议随附：公司介绍、核心产品、项目投资方案、拟落地团队及时间表。所有支持事项均须专项对接与核实。</span><span class="smallcaps">START A CONVERSATION</span></div>
 </div>
 </section>
-<section class="final">
+<section class="final final-rework" id="reach">
 <div class="wrap">
-<div class="eyebrow"><i></i> WELCOME TO ZHUHAI HIGH-TECH ZONE</div>
-<h2 class="final-title">下一程，<br>从这里开始。 ↗</h2>
-<p class="final-sub">珠海高新区，欢迎投资考察。<br>用一场具体的项目沟通，找到研发、制造、人才与市场之间更好的连接方式。</p>
-<div class="button-line"><button class="action" id="sharePage" type="button">复制网站链接 <span class="arrow">↗</span></button><button class="action alt" id="printPage" type="button">打印 / 保存 PDF <span class="arrow">↗</span></button></div>
-<div class="bottom-meta"><span>产业数据、规划建设及政策信息均以相关主管部门最新公布和实际项目洽谈结果为准。<br>本网页仅供企业投资考察参考，不作为合同、审批或待遇承诺。</span><span>© 2026 ZHUHAI HIGH-TECH ZONE · REFERENCE EDITION</span><button class="to-top" id="backTop" type="button" aria-label="返回顶部">↑</button></div>
+<div class="final-index"><span>07 / CONTACT</span><span>INVESTMENT COOPERATION · ZHUHAI</span></div>
+<div class="final-layout">
+<div class="final-message">
+<h2 class="final-title-v2"><span>下一程，</span><span>从这里开始。<i>↗</i></span></h2>
+<p class="final-hello">珠海高新区，欢迎投资考察。</p>
+<p class="final-explain">以一次具体的项目交流，讨论研发、制造、人才与市场如何连接。从产业匹配、空间选址到政策适用与项目落地，欢迎直接沟通。</p>
+<div class="final-actions">
+<a class="final-pill final-pill-solid" href="tel:19919930725">拨打电话 <b>↗</b></a>
+<a class="final-pill final-pill-outline" href="mailto:xiangexie@88.com?subject=%E7%8F%A0%E6%B5%B7%E9%AB%98%E6%96%B0%E5%8C%BA%E9%A1%B9%E7%9B%AE%E5%90%88%E4%BD%9C">邮件联系 <b>↗</b></a>
+</div>
+</div>
+<div class="final-contact-panel">
+<div class="person-overline">INVESTMENT CONTACT</div>
+<div class="person-heading"><strong>谢先格</strong><span>珠海高新区 · 招商联络</span></div>
+<div class="contact-facts">
+<div class="contact-row"><span>珠海地址</span><div>珠海高新区创新发展大厦 A 栋 13 楼</div></div>
+<div class="contact-row"><span>深圳地址</span><div>深圳市南山区中国储能大厦 1606 室</div></div>
+<div class="contact-row"><span>手机号码</span><div><a href="tel:19919930725">199 1993 0725</a></div></div>
+<div class="contact-row"><span>E-mail</span><div><a href="mailto:xiangexie@88.com">xiangexie@88.com</a></div></div>
+</div>
+<div class="wechat-band">
+<a class="wechat-qr-link" href="https://u.wechat.com/MHreehKTyPrR1aVpl_2SamE?s=2" aria-label="微信添加好友" target="_blank" rel="noopener"><img src="./wechat-qr.svg" alt="谢先格微信二维码" width="148" height="148" loading="lazy"></a>
+<div><div class="wechat-label">WECHAT</div><h3>扫码添加微信</h3><p>欢迎发送项目简介，预约考察与合作交流。</p><a href="https://u.wechat.com/MHreehKTyPrR1aVpl_2SamE?s=2" target="_blank" rel="noopener">也可点击打开微信名片 ↗</a></div>
+</div>
+</div>
+</div>
+<div class="final-endnote">
+<div>珠海高新区 · 2026 企业家投资指南</div>
+<div class="final-utility"><button class="final-text-button" id="sharePage" type="button">复制网页链接 ↗</button><button class="final-text-button" id="printPage" type="button">打印 / PDF ↗</button></div>
+<button class="to-top" id="backTop" type="button" aria-label="返回顶部">↑</button>
+</div>
+<p class="final-legal">有关产业指标、政策适用、载体及项目合作，以实际核验和正式文件为准。</p>
 </div>
 </section>
 </main>
